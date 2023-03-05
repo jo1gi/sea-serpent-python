@@ -1,0 +1,16 @@
+[package]
+name = "sea-serpent-python"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "sea_serpent"
+crate-type = ["cdylib"]
+
+[dependencies.sea-serpent]
+git = "https://github.com/jo1gi/sea-serpent" 
+default-features = false
+
+[dependencies.pyo3]
+version = "0.15.1"
+features = ["extension-module"]
