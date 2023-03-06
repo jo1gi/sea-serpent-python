@@ -7,6 +7,9 @@ edition = "2021"
 name = "sea_serpent"
 crate-type = ["cdylib"]
 
+[dependencies]
+thiserror = "1.0"
+
 [dependencies.sea-serpent]
 git = "https://github.com/jo1gi/sea-serpent" 
 default-features = false
